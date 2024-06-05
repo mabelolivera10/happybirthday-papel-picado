@@ -1,0 +1,52 @@
+/* by mabelolivera 
+https://linktr.ee/mabelolivera10
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background: radial-gradient(
+    circle farthest-corner,
+    hsl(159, 95%, 8%),
+    hsl(320deg, 100%, 2%) 100%
+  );
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
+}
+body {
+  font-family: "Asap", sans-serif;
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  overflow-x: hidden;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: max(35px, 7vw);
+  text-shadow: 1px 1px black;
+  mix-blend-mode: difference;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+canvas {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
